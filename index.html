@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芳芳のpython学习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><img src="imgs/tou.jpg" alt="图标" class="logo-icon"> 芳芳のpython学习</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#tutorials">教程</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>欢迎来到芳芳のpython学习</h2>
+                <p class="subtitle">从零开始学习Python编程，掌握测试开发技能</p>
+                <a href="#tutorials" class="btn-primary">开始学习</a>
+            </div>
+        </section>
+
+        <section id="tutorials" class="tutorials-section">
+            <div class="container">
+                <h2 class="section-title">Python教程目录</h2>
+                <div class="tutorial-grid">
+                    <div class="tutorial-card" onclick="loadTutorial('basics')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>Python基础</h3>
+                        <p>变量、数据类型、运算符、控制流等基础知识</p>
+                    </div>
+                    <div class="tutorial-card" onclick="loadTutorial('functions')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>函数与模块</h3>
+                        <p>函数定义、参数传递、模块导入和使用</p>
+                    </div>
+                    <div class="tutorial-card" onclick="loadTutorial('oop')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>面向对象编程</h3>
+                        <p>类、对象、继承、多态等OOP概念</p>
+                    </div>
+                    <div class="tutorial-card" onclick="loadTutorial('data-structures')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>数据结构</h3>
+                        <p>列表、字典、集合、元组等数据结构详解</p>
+                    </div>
+                    <div class="tutorial-card" onclick="loadTutorial('file-io')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>文件操作</h3>
+                        <p>文件读写、异常处理、上下文管理器</p>
+                    </div>
+                    <div class="tutorial-card" onclick="loadTutorial('testing')">
+                        <div class="card-icon"><img src="imgs/tou.jpg" alt="图标"></div>
+                        <h3>测试开发</h3>
+                        <p>单元测试、pytest框架、测试最佳实践</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content" class="content-section">
+            <div class="container">
+                <div id="tutorial-content" class="tutorial-content">
+                    <p class="welcome-message"><img src="imgs/tou.jpg" alt="图标" class="welcome-icon"> 点击左侧教程卡片开始学习</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">关于本站</h2>
+                <div class="about-content">
+                    <p>欢迎来到"芳芳のpython学习"！这是一个芳芳小姐专用的Python编程和测试开发的教程网站。</p>
+                    <p>加油加油加油！</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 芳芳的测试之路. 使用 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> 托管</p>
+        </div>
+    </footer>
+
+    <script src="tutorials.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
